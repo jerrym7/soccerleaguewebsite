@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../javascript/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../javascript/functionality.js"></script>
+    <title>Saturday League</title>
+</head>
+<body>
+<div class = "inline-div">
+    <img class="logo" src="../images/SoccerLogo.png" alt="Soccer Leagues" style="width:70px;height:70px">
+</div>
+<div class="navbar">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Leagues</a>
+            <div class="dropdown-content">
+                <a href="fridayleague.html">Friday League</a>
+                <a href="#saturdayleague">Saturday Leagues</a>
+                <a href="sundayleague.html">Sunday League</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">History</a>
+            <div class="dropdown-content">
+                <a href="fleaguehistory.html">Friday League</a>
+                <a href="sleaguehistory.html">Saturday Leagues</a>
+                <a href="suleaguehistory.html">Sunday League</a>
+            </div>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li class="login"><a id="log-in-btn" href="javascript:showModal()">Log In</a></li>
+    </ul>
+</div>
+<div id="modal-01" class="modal" onclick="showModalJQ()">
+    <form class="modal-content animate" action="php/login_page.php">
+        <div class="imgcontainer">
+            <span onclick="hideModal()" class="close" title="Close Modal">&times;</span>
+            <img src="../images/avatar.png" alt="Avatar" class="avatar">
+        </div>
+        <div class="container01">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <button type="submit">Log In</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+        <div class="container01" style="background-color:azure">
+            <button type="button" onclick="hideModal()" class="cancelbtn">Cancel</button>
+            <!-- For future use, to be able to registe
+            <a type="button" onclick="document.getElementById('modal-01').style.display='none'" href="#register" class="registerbtn">Register</a>
+             <span class="psw"><a href="#" >Forgot password?</a></span> -->
+        </div>
+    </form>
+</div>
+<div>Here goes the tabs***************</div>
+<div class="t-container">
+    <div><h2><u>Standings</u></h2></div>
+    <div class="t-div">
+        <section>
+            <div class="tbl-header">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <thead>
+                    <tr>
+                        <th>Qualified</th>
+                        <th>Position</th>
+                        <th>Team</th>
+                        <th>W</th>
+                        <th>D</th>
+                        <th>L</th>
+                        <th>GD</th>
+                        <th>Pts</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="tbl-content">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <tbody>
+                    <tr>
+                        <td><a id="qualified"></a> </td>
+                        <td>1</td>
+                        <td>Chivas </td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>+30</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td><a id="qualified"></a> </td>
+                        <td>2</td>
+                        <td>Cruz Azul</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>+30</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td><a id="qualified"></a> </td>
+                        <td>3</td>
+                        <td>Monterrey</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>+30</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td><a id="qualified"></a> </td>
+                        <td>4</td>
+                        <td>America</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>+30</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td><a id="qualified"></a> </td>
+                        <td>5</td>
+                        <td>Pachuca</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>+30</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td><a id="qualified"></a> </td>
+                        <td>6</td>
+                        <td>Leon</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>+30</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td><a id="qualified"></a> </td>
+                        <td>7</td>
+                        <td>Santos</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>+30</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td><a id="qualified"></a> </td>
+                        <td>8</td>
+                        <td>Necaxa</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>+30</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td><a id="n-qualified"></a> </td>
+                        <td>9</td>
+                        <td>Atletico San Luis</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>+30</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td><a id="n-qualified"></a> </td>
+                        <td>10</td>
+                        <td>Lobos BUAP</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>+30</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td><a id="n-qualified"></a> </td>
+                        <td>11</td>
+                        <td>Purepero</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>+30</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td><a id="n-qualified"></a> </td>
+                        <td>12</td>
+                        <td>Abasolo</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>+30</td>
+                        <td>36</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <script>
+            $(window).on("load resize ", function() {
+                var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+                $('.tbl-header').css({'padding-right':scrollWidth});
+            }).resize();
+        </script>
+    </div>
+</div>
+</body>
+</html>

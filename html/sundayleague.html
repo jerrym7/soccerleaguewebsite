@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <title>Contact Us</title>
+</head>
+<body>
+<div class = "inline-div">
+    <img class="logo" src="../images/SoccerLogo.png" alt="Soccer Leagues" style="width:70px;height:70px">
+</div>
+<div class="navbar">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Leagues</a>
+            <div class="dropdown-content">
+                <a href="fridayleague.html">Friday League</a>
+                <a href="saturdayleague.html">Saturday Leagues</a>
+                <a href="#sundayleague">Sunday League</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">History</a>
+            <div class="dropdown-content">
+                <a href="fleaguehistory.html">Friday League</a>
+                <a href="sleaguehistory.html">Saturday Leagues</a>
+                <a href="suleaguehistory.html">Sunday League</a>
+            </div>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li class="login" onclick="document.getElementById('modal-01').style.display='block'" style="width: auto;"><a >Log In</a></li>
+    </ul>
+</div>
+<div id="modal-01" class="modal">
+    <form class="modal-content animate" action="php/login_page.php">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('modal-01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="images/avatar.png" alt="Avatar" class="avatar">
+        </div>
+        <div class="container01">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <button type="submit">Log In</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+        <div class="container01" style="background-color:azure">
+            <button type="button" onclick="document.getElementById('modal-01').style.display='none'" class="cancelbtn">Cancel</button>
+            <!-- For future use, to be able to registe
+            <a type="button" onclick="document.getElementById('modal-01').style.display='none'" href="#register" class="registerbtn">Register</a>
+             <span class="psw"><a href="#" >Forgot password?</a></span> -->
+        </div>
+    </form>
+</div>
+<script>
+    // Get the modal
+    var modal = document.getElementById('modal-01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
